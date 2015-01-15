@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subscriber:</strong>
+  <%= @call.subscriber %>
+</p>
+
+<p>
+  <strong>Call date:</strong>
+  <%= @call.call_date %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @call.length %>
+</p>
+
+<p>
+  <strong>Length r:</strong>
+  <%= @call.length_r %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @call.cost %>
+</p>
+
+<p>
+  <strong>Caller:</strong>
+  <%= @call.caller %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @call.receiver %>
+</p>
+
+<p>
+  <strong>Action:</strong>
+  <%= @call.action %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @call.service %>
+</p>
+
+<p>
+  <strong>Service type:</strong>
+  <%= @call.service_type %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @call.volume %>
+</p>
+
+<%= link_to 'Edit', edit_call_path(@call) %> |
+<%= link_to 'Back', calls_path %>

@@ -1,0 +1,61 @@
+<%= form_for(@call) do |f| %>
+  <% if @call.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@call.errors.count, "error") %> prohibited this call from being saved:</h2>
+
+      <ul>
+      <% @call.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subscriber %><br>
+    <%= f.text_field :subscriber %>
+  </div>
+  <div class="field">
+    <%= f.label :call_date %><br>
+    <%= f.datetime_select :call_date %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br>
+    <%= f.time_select :length %>
+  </div>
+  <div class="field">
+    <%= f.label :length_r %><br>
+    <%= f.number_field :length_r %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :caller %><br>
+    <%= f.text_field :caller %>
+  </div>
+  <div class="field">
+    <%= f.label :receiver %><br>
+    <%= f.text_field :receiver %>
+  </div>
+  <div class="field">
+    <%= f.label :action %><br>
+    <%= f.text_field :action %>
+  </div>
+  <div class="field">
+    <%= f.label :service %><br>
+    <%= f.text_field :service %>
+  </div>
+  <div class="field">
+    <%= f.label :service_type %><br>
+    <%= f.text_field :service_type %>
+  </div>
+  <div class="field">
+    <%= f.label :volume %><br>
+    <%= f.text_field :volume %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

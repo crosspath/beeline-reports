@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subscriber: 
+  call_date: 2015-01-15 12:32:08
+  length: 2015-01-15 12:32:08
+  length_r: 1
+  cost: 1.5
+  caller: MyString
+  receiver: MyString
+  action: MyString
+  service: MyString
+  service_type: MyString
+  volume: 1.5
+
+two:
+  subscriber: 
+  call_date: 2015-01-15 12:32:08
+  length: 2015-01-15 12:32:08
+  length_r: 1
+  cost: 1.5
+  caller: MyString
+  receiver: MyString
+  action: MyString
+  service: MyString
+  service_type: MyString
+  volume: 1.5
