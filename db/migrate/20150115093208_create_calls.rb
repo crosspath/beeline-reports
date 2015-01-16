@@ -1,7 +1,7 @@
 class CreateCalls < ActiveRecord::Migration
   def change
     create_table :calls do |t|
-      t.reflection :subscriber
+      t.references :subscriber
       t.datetime :call_date
       t.time :length
       t.integer :length_r
